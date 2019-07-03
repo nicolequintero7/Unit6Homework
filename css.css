@@ -1,12 +1,14 @@
 body {
     background-color: black;
   }
-  color {
-    color: white;
-  };
+ 
 
   .display-4 {
       text-align: center;
+  }
+
+  #search-form {
+         color: white;
   }
  
  
