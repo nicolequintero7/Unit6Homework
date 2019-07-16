@@ -3,7 +3,7 @@ $(function(){
   console.log("Page Loaded");
   //all of the new buttons are added to this page with this code below
   //variable called buttonPopulate that houses more variables
-  buttonPopulate(animalArray, 'searchButton', '#buttonsArea');
+  buttonPopulate(animalArray, 'searchButton', '#buttonsArea').addClass("btn btn-white");
   console.log(buttonPopulate);
  
 })
@@ -97,7 +97,7 @@ $('#search-form').on('submit', function(){
   const newSearch = $('input').eq(0).val();
   animalArray.push(newSearch);
   buttonPopulate(animalArray, 'searchButton', '#buttonsArea');
-  $("#buttonsArea").append(buttonPopulate);
+  $("#buttonsArea").append(buttonPopulate).addClass("btn btn-white");
   console.log(buttonPopulate);
   return false;
 });
